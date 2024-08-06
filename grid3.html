@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* background-color: blanchedalmond; */
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        .parent{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            column-gap: 2px;
+            row-gap: 2px;
+            width: 350PX;
+            background-color: rgb(255, 254, 255);
+            height: 250px;
+       
+        }
+        .parent div{
+            background-color: aqua;
+            height: 50px;
+            font-size: 15px solid;       
+            display: grid;            
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+           
+        }
+        .parent div:nth-child(1){
+            background-color: rgb(211, 164, 6);
+            color: rgb(12, 12, 12);
+            grid-column: 1/5;
+            height: unset;
+         
+        }
+        .parent div:nth-child(2){
+            background-color: rgb(8, 165, 223);
+            color: rgb(0, 0, 0);
+            grid-column: 1/3;
+            height: unset;
+      
+        }
+        .parent div:nth-child(3){
+            background-color: rgb(252, 252, 252);
+            color: rgb(10, 10, 10);
+            grid-column: 3/4;
+            height: unset;
+        }
+        .parent div:nth-child(4){
+            background-color: rgb(184, 101, 101);
+            grid-column: 4/5;
+            color: rgb(7, 7, 7); 
+            height: unset;
+         }
+        .parent div:nth-child(5){
+            background-color: rgb(111, 168, 91);
+            grid-column: 1/5;
+            color: rgb(11, 11, 11); 
+            height: unset;
+         }
+ 
+    </style>
+ </head>
+ <body>
+         <div class="parent">
+               <div>header</div>
+               <div>main</div>
+               <div>empty</div>
+               <div>sidebar</div>
+               <div>footer</div>
+              
+                
+ 
+         
+         </div>
+    
+    
+ </body>
+ </html>

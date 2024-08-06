@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+         
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        section{
+            background-color: rgb(96, 25, 249);
+            width: 80vw;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            display: grid;
+            /* justify-content: center; */
+  
+            width: 80vw;
+            height: 100vh;
+            color: white;
+            margin-inline: auto;
+            grid-template-areas: 
+            'header header header'
+            'sidebar-1 content sidebar-2'
+            'footer footer footer';
+            grid-template-rows: 1fr 5fr 1fr ;
+            grid-template-columns: 2fr 3fr 2fr ;
+     
+        }
+       
+
+        header {
+            background-color: rgb(51, 131, 243);
+            grid-area: header;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+        }
+        footer {
+            background-color: rgb(199, 144, 5);
+            grid-area: footer;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+        }
+        content{
+            background-color: rgb(130, 255, 14);
+            grid-area: content;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+            height: 250px;
+        }
+        aside.left{
+            background-color: rgb(228, 79, 4);
+            grid-area: sidebar-1;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+            height: 250px;
+        }
+        aside.right{
+            background-color: rgb(253, 253, 6);
+            grid-area: sidebar-2;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+            height: 250px;
+        }
+
+    </style>
+</head>
+<body>
+ 
+        <section>
+            <div class="container">
+                <header>header</header>
+                <aside class="left">left sidebar-1</aside>
+                <aside class="right">right sidebar-2</aside>
+                <content>main content</content>
+                <footer>
+                    <div class="foot">
+                        <div class="footer1"> footer1</div>
+                        <div class="footer2"> footer2</div>
+                        <div class="footer3"> footer3</div>
+                        <div class="footer4"> footer4</div>
+                    </div>
+                  </footer>
+            
+            </div>
+
+        </section>
+
+
+  
+    
+</body>
+</html>
