@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment on styling form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+         }
+    
+        #customers{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100vw;
+            border-collapse: collapse;
+            height: 70vh;
+           
+            
+           
+        }
+        #customers td{
+            font-size: 12px;
+        }
+        #customers th{
+            font-size: 15px;
+        }
+        #customers td, #customers th {
+             padding: 20px;
+    
+        }
+        #customers tr:nth-child(even){background-color: white;}
+        #on :hover {background-color:green;
+            color: white;}
+        .off :hover {background-color: green;
+            color: white;}
+        
+
+        #customers th{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: green;
+            text-align: left;
+            color: white;
+            }
+            .in{
+                background-color: rgb(203, 207, 211);
+            }
+            .out{
+                background-color: rgb(203, 207, 211);
+            }
+
+    </style>
+</head>
+<body>
+    <table id="customers">
+        <tr>
+            <th>Name</th>
+            <th>Order Number</th>
+            <th>Shipping to</th>
+            <th>Status</th>
+            <th>Items ordered</th>
+        </tr>
+        <tr id="on">
+            <td>iniemen David</td>
+            <td>2G100075-78474-3434546</td>
+            <td>Lagos Nigeria</td>
+            <td>Completed</td>
+            <td>2 Block hoddies with make over love cards-256 <br> 
+                5 second basketball you loces <br> 
+                3 black socks </td>
+        </tr>
+        <tr  class="in">
+            <td>Okon Ekpo</td>
+            <td>2G100075-78474-3434546</td>
+            <td>Lagos Nigeria</td>
+            <td>In-transit</td>
+            <td>2 Block hoddies with make over love cards-256 <br> 
+                5 second basketball you loces <br> 
+                3 black socks </td>
+        </tr>
+ 
+        <tr class="off">
+            <td>Inieme David</td>
+            <td>2G100075-78474-3434546</td>
+            <td>Lagos Nigeria</td>
+            <td>Completed</td>
+            <td>2 Block hoddies with make over love cards-256 <br> 
+                5 second basketball you loces <br> 
+                3 black socks </td>
+        </tr>
+        <tr class="out">
+            <td>Okon Ekpo</td>
+            <td>2G100075-78474-3434546</td>
+            <td>Lagos Nigeria</td>
+            <td>Pending</td>
+            <td>2 Block hoddies with make over love cards-256 <br> 
+                5 second basketball you loces <br> 
+                3 black socks </td>
+        </tr>
+ 
+     
+    </table>
+</body>
+</html>
